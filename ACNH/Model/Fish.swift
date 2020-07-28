@@ -4,12 +4,12 @@ struct Fish: Codable, Critter {
 
     let shadow: String
     let priceCj: Int
+    var availability: Availability?
 
     //Critter Protocol
     var id: Int
     var name: Name?
     var price: Int
-    var availability: Availability?
     var catchPhrase: String
     var museumPhrase: String
     var imageUrl: String

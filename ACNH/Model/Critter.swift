@@ -4,7 +4,6 @@ protocol Critter {
     var id: Int { get set }
     var name: Name? { get set }
     var price: Int { get set }
-    var availability: Availability? { get set }
     var catchPhrase: String { get set }
     var museumPhrase: String { get set }
     var imageUrl: String { get set }
@@ -32,5 +31,19 @@ struct Availability: Codable {
         case monthsAvailableInNorth = "month-northern"
         case monthsAvailableInSouth = "month-southern"
         case time, isAllDay, isAllYear, location, rarity
+    }
+}
+
+struct SeaAvailability: Codable {
+    let monthsAvailableInNorth: String
+    let monthsAvailableInSouth: String
+    let time: String
+    let isAllDay: Bool
+    let isAllYear: Bool
+
+    private enum CodingKeys: String, CodingKey {
+        case monthsAvailableInNorth = "month-northern"
+        case monthsAvailableInSouth = "month-southern"
+        case time, isAllDay, isAllYear
     }
 }
