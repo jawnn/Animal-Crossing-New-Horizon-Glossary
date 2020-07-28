@@ -8,6 +8,7 @@ struct Fish: Codable, Critter {
 
     //Critter Protocol
     var id: Int
+    var type: Type = .Fish
     var name: Name?
     var price: Int
     var catchPhrase: String

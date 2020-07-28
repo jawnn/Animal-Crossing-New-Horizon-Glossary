@@ -8,6 +8,7 @@ struct Sea: Codable, Critter {
 
     // Critter Protocol 
     var id: Int
+    var type: Type = .Sea
     var name: Name?
     var price: Int
     var catchPhrase: String

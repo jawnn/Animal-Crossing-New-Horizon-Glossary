@@ -1,7 +1,12 @@
 import Foundation
 
+enum Type: String {
+    case Bug, Fish, Sea
+}
+
 protocol Critter {
     var id: Int { get set }
+    var type: Type { get set }
     var name: Name? { get set }
     var price: Int { get set }
     var catchPhrase: String { get set }

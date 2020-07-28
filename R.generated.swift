@@ -114,6 +114,45 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.color` struct is generated, and contains static references to 3 colors.
+  struct color {
+    /// Color `Color`.
+    static let color = Rswift.ColorResource(bundle: R.hostingBundle, name: "Color")
+    /// Color `background`.
+    static let background = Rswift.ColorResource(bundle: R.hostingBundle, name: "background")
+    /// Color `textBackground`.
+    static let textBackground = Rswift.ColorResource(bundle: R.hostingBundle, name: "textBackground")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "Color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func color(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.color, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "background", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.background, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "textBackground", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func textBackground(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.textBackground, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
     /// Image `load_spinner`.
@@ -160,12 +199,22 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `CritterDetailCell`.
+    static let critterDetailCell = _R.nib._CritterDetailCell()
     /// Nib `CritterDetailViewController`.
     static let critterDetailViewController = _R.nib._CritterDetailViewController()
     /// Nib `CritterListCell`.
     static let critterListCell = _R.nib._CritterListCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CritterDetailCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.critterDetailCell) instead")
+    static func critterDetailCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.critterDetailCell)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "CritterDetailViewController", in: bundle)`
@@ -183,6 +232,10 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func critterDetailCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CritterDetailCell? {
+      return R.nib.critterDetailCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CritterDetailCell
+    }
+
     static func critterDetailViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.critterDetailViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -194,10 +247,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `critterListCell`.
     static let critterListCell: Rswift.ReuseIdentifier<CritterListCell> = Rswift.ReuseIdentifier(identifier: "critterListCell")
+    /// Reuse identifier `detailCellID`.
+    static let detailCellID: Rswift.ReuseIdentifier<CritterDetailCell> = Rswift.ReuseIdentifier(identifier: "detailCellID")
 
     fileprivate init() {}
   }
@@ -224,6 +279,20 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
+    struct _CritterDetailCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = CritterDetailCell
+
+      let bundle = R.hostingBundle
+      let identifier = "detailCellID"
+      let name = "CritterDetailCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CritterDetailCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CritterDetailCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _CritterDetailViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "CritterDetailViewController"

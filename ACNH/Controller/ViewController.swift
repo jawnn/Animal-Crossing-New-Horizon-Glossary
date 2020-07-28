@@ -116,6 +116,23 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var critter : Critter {
+            switch segmentController.selectedSegmentIndex {
+            case 0:
+                return bugs[indexPath.row]
+            case 1:
+                return fish[indexPath.row]
+            case 2:
+                return sea[indexPath.row]
+            default:
+                return bugs[indexPath.row]
+            }
+        }
+        let detailsVC = CritterDetailViewController(type: critter.type, critter: critter)
+        navigationController?.pushViewController(detailsVC, animated: false)
+    }
+
 }
 
 extension UIImageView {
