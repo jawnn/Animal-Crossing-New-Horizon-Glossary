@@ -7,6 +7,7 @@ class CritterListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
 
     var presenter: CritterListPresenter!
+    var router: CritterListRouterType!
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,20 +46,8 @@ extension CritterListViewController: CritterListType {
 extension CritterListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var critter : Critter {
-            switch segmentController.selectedSegmentIndex {
-            case 0:
-                return presenter.bugs[indexPath.row]
-            case 1:
-                return presenter.fish[indexPath.row]
-            case 2:
-                return presenter.sea[indexPath.row]
-            default:
-                return presenter.bugs[indexPath.row]
-            }
-        }
-        let detailsVC = CritterDetailViewController(type: critter.type, critter: critter)
-        navigationController?.pushViewController(detailsVC, animated: false)
+        let critter = presenter.getTappedCritter(index: indexPath.row)
+        router.navigateToCritterDetails(critter: critter)
     }
 
 }

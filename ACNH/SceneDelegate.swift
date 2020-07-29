@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let view = CritterListViewController()
         let nav = UINavigationController(rootViewController: view)
         let presenter = CritterListPresenter(model: model, view: view)
+        let router = CritterListRouter(nav: nav)
         view.presenter = presenter
+        view.router = router
         window.rootViewController = nav
         self.window = window
         window.makeKeyAndVisible()

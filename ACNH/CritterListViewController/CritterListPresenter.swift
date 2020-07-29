@@ -1,9 +1,7 @@
 import UIKit
 
 protocol CritterListPresenterType: AnyObject, UITableViewDataSource {
-    var bugs: [Bug] { get }
-    var fish: [Fish] { get }
-    var sea: [Sea] { get }
+    func getTappedCritter(index: Int) -> Critter
 }
 
 protocol CritterListType: AnyObject {
@@ -15,21 +13,37 @@ class CritterListPresenter: NSObject, CritterListPresenterType {
     var model: CritterListModelType
     var view: CritterListType
 
-    var bugs: [Bug] {
-        return model.bugs
-    }
-
-    var fish: [Fish] {
-        return model.fish
-    }
-
-    var sea: [Sea] {
-        return model.sea
-    }
+//    var bugs: [Bug] {
+//        return model.bugs
+//    }
+//
+//    var fish: [Fish] {
+//        return model.fish
+//    }
+//
+//    var sea: [Sea] {
+//        return model.sea
+//    }
 
     init(model: CritterListModelType, view: CritterListType) {
         self.model = model
         self.view = view
+    }
+
+    func getTappedCritter(index: Int) -> Critter {
+        var critter : Critter {
+            switch view.critterSection {
+            case 0:
+                return model.bugs[index]
+            case 1:
+                return model.fish[index]
+            case 2:
+                return model.sea[index]
+            default:
+                return model.bugs[index]
+            }
+        }
+        return critter
     }
 
     // MARK: UITableViewDataSource
@@ -54,11 +68,11 @@ class CritterListPresenter: NSObject, CritterListPresenterType {
         let index = indexPath.row
         switch view.critterSection {
         case 0:
-            cell.configure(critter: bugs[index])
+            cell.configure(critter: model.bugs[index])
         case 1:
-            cell.configure(critter: fish[index])
+            cell.configure(critter: model.fish[index])
         case 2:
-            cell.configure(critter: sea[index])
+            cell.configure(critter: model.sea[index])
         default:
             return UITableViewCell()
         }

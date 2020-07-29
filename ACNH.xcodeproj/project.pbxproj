@@ -14,6 +14,9 @@
 		D22C1F1324D1F148001AA655 /* CritterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1224D1F148001AA655 /* CritterListModel.swift */; };
 		D22C1F1524D1FE79001AA655 /* CritterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */; };
 		D22C1F1724D206FA001AA655 /* CritterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1624D206FA001AA655 /* CritterInteractor.swift */; };
+		D22C1F1924D22576001AA655 /* CritterDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1824D22576001AA655 /* CritterDetailModel.swift */; };
+		D22C1F1B24D2258D001AA655 /* CritterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1A24D2258D001AA655 /* CritterDetailPresenter.swift */; };
+		D230984D24D22CBD00F9E1E1 /* CritterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D230984C24D22CBD00F9E1E1 /* CritterListRouter.swift */; };
 		D267550124CA58D000B71763 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550024CA58D000B71763 /* R.generated.swift */; };
 		D267550524CA619600B71763 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550424CA619600B71763 /* Bug.swift */; };
 		D267550724CA61CC00B71763 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550624CA61CC00B71763 /* Fish.swift */; };
@@ -41,6 +44,9 @@
 		D22C1F1224D1F148001AA655 /* CritterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListModel.swift; sourceTree = "<group>"; };
 		D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListPresenter.swift; sourceTree = "<group>"; };
 		D22C1F1624D206FA001AA655 /* CritterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterInteractor.swift; sourceTree = "<group>"; };
+		D22C1F1824D22576001AA655 /* CritterDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterDetailModel.swift; sourceTree = "<group>"; };
+		D22C1F1A24D2258D001AA655 /* CritterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterDetailPresenter.swift; sourceTree = "<group>"; };
+		D230984C24D22CBD00F9E1E1 /* CritterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListRouter.swift; sourceTree = "<group>"; };
 		D267550024CA58D000B71763 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = ACNH/SupportingFiles/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		D267550424CA619600B71763 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		D267550624CA61CC00B71763 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 			children = (
 				D2E7EB0F24CA49C400EDD734 /* Controller */,
 				D2727F3D24C90A8E00503D88 /* View */,
+				D22C1F1824D22576001AA655 /* CritterDetailModel.swift */,
+				D22C1F1A24D2258D001AA655 /* CritterDetailPresenter.swift */,
 			);
 			path = CritterDetailViewController;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 				D22C1F0C24D1EB5B001AA655 /* Views */,
 				D22C1F1224D1F148001AA655 /* CritterListModel.swift */,
 				D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */,
+				D230984C24D22CBD00F9E1E1 /* CritterListRouter.swift */,
 			);
 			path = CritterListViewController;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 			files = (
 				D22C1F1724D206FA001AA655 /* CritterInteractor.swift in Sources */,
 				D2F3031924C8D5FB002930AF /* CritterListViewController.swift in Sources */,
+				D230984D24D22CBD00F9E1E1 /* CritterListRouter.swift in Sources */,
 				D2FCBB1524CFD9CB00BD6992 /* Critter.swift in Sources */,
 				D2F3031524C8D5FB002930AF /* AppDelegate.swift in Sources */,
 				D2727F3B24C90A7A00503D88 /* CritterListCell.swift in Sources */,
@@ -357,10 +367,12 @@
 				D2C45DB924D0D3C80099B9F5 /* CritterDetailCell.swift in Sources */,
 				D267550124CA58D000B71763 /* R.generated.swift in Sources */,
 				D267550724CA61CC00B71763 /* Fish.swift in Sources */,
+				D22C1F1924D22576001AA655 /* CritterDetailModel.swift in Sources */,
 				D226EF5A24CBB2040020A644 /* CritterDetailViewController.swift in Sources */,
 				D22C1F1524D1FE79001AA655 /* CritterListPresenter.swift in Sources */,
 				D267550924CA61D500B71763 /* Sea.swift in Sources */,
 				D22C1F1324D1F148001AA655 /* CritterListModel.swift in Sources */,
+				D22C1F1B24D2258D001AA655 /* CritterDetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
