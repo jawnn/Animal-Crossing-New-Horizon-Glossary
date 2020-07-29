@@ -10,6 +10,10 @@
 		51E22E48EF7934673C43DF9F /* Pods_ACNH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DDFAA84E3195B43672E97A /* Pods_ACNH.framework */; };
 		D226EF5A24CBB2040020A644 /* CritterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226EF5824CBB2040020A644 /* CritterDetailViewController.swift */; };
 		D226EF5B24CBB2040020A644 /* CritterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D226EF5924CBB2040020A644 /* CritterDetailViewController.xib */; };
+		D22C1F0E24D1EBF3001AA655 /* CritterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22C1F0D24D1EBF3001AA655 /* CritterListViewController.xib */; };
+		D22C1F1324D1F148001AA655 /* CritterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1224D1F148001AA655 /* CritterListModel.swift */; };
+		D22C1F1524D1FE79001AA655 /* CritterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */; };
+		D22C1F1724D206FA001AA655 /* CritterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C1F1624D206FA001AA655 /* CritterInteractor.swift */; };
 		D267550124CA58D000B71763 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550024CA58D000B71763 /* R.generated.swift */; };
 		D267550524CA619600B71763 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550424CA619600B71763 /* Bug.swift */; };
 		D267550724CA61CC00B71763 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267550624CA61CC00B71763 /* Fish.swift */; };
@@ -21,8 +25,7 @@
 		D2C45DBC24D0D5880099B9F5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C45DBB24D0D5880099B9F5 /* Colors.xcassets */; };
 		D2F3031524C8D5FB002930AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3031424C8D5FB002930AF /* AppDelegate.swift */; };
 		D2F3031724C8D5FB002930AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3031624C8D5FB002930AF /* SceneDelegate.swift */; };
-		D2F3031924C8D5FB002930AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3031824C8D5FB002930AF /* ViewController.swift */; };
-		D2F3031C24C8D5FC002930AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F3031A24C8D5FC002930AF /* Main.storyboard */; };
+		D2F3031924C8D5FB002930AF /* CritterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3031824C8D5FB002930AF /* CritterListViewController.swift */; };
 		D2F3031E24C8D600002930AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F3031D24C8D600002930AF /* Assets.xcassets */; };
 		D2F3032124C8D600002930AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F3031F24C8D600002930AF /* LaunchScreen.storyboard */; };
 		D2FCBB1524CFD9CB00BD6992 /* Critter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FCBB1424CFD9CB00BD6992 /* Critter.swift */; };
@@ -34,7 +37,11 @@
 		A69AE937D8509326632EF1D5 /* Pods-ACNH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACNH.debug.xcconfig"; path = "Target Support Files/Pods-ACNH/Pods-ACNH.debug.xcconfig"; sourceTree = "<group>"; };
 		D226EF5824CBB2040020A644 /* CritterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterDetailViewController.swift; sourceTree = "<group>"; };
 		D226EF5924CBB2040020A644 /* CritterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CritterDetailViewController.xib; sourceTree = "<group>"; };
-		D267550024CA58D000B71763 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		D22C1F0D24D1EBF3001AA655 /* CritterListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CritterListViewController.xib; sourceTree = "<group>"; };
+		D22C1F1224D1F148001AA655 /* CritterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListModel.swift; sourceTree = "<group>"; };
+		D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListPresenter.swift; sourceTree = "<group>"; };
+		D22C1F1624D206FA001AA655 /* CritterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterInteractor.swift; sourceTree = "<group>"; };
+		D267550024CA58D000B71763 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = ACNH/SupportingFiles/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		D267550424CA619600B71763 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		D267550624CA61CC00B71763 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		D267550824CA61D500B71763 /* Sea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sea.swift; sourceTree = "<group>"; };
@@ -46,8 +53,7 @@
 		D2F3031124C8D5FB002930AF /* ACNH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACNH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F3031424C8D5FB002930AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F3031624C8D5FB002930AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2F3031824C8D5FB002930AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2F3031B24C8D5FC002930AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2F3031824C8D5FB002930AF /* CritterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CritterListViewController.swift; sourceTree = "<group>"; };
 		D2F3031D24C8D600002930AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F3032024C8D600002930AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F3032224C8D600002930AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,22 +89,74 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D22C1F0B24D1EB49001AA655 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2F3031824C8D5FB002930AF /* CritterListViewController.swift */,
+				D22C1F0D24D1EBF3001AA655 /* CritterListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D22C1F0C24D1EB5B001AA655 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2727F3924C90A7A00503D88 /* CritterListCell.swift */,
+				D2727F3A24C90A7A00503D88 /* CritterListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D22C1F0F24D1F087001AA655 /* CritterDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2E7EB0F24CA49C400EDD734 /* Controller */,
+				D2727F3D24C90A8E00503D88 /* View */,
+			);
+			path = CritterDetailViewController;
+			sourceTree = "<group>";
+		};
+		D22C1F1024D1F0EB001AA655 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2F3031D24C8D600002930AF /* Assets.xcassets */,
+				D2C45DBB24D0D5880099B9F5 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D22C1F1124D1F105001AA655 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D2F3031F24C8D600002930AF /* LaunchScreen.storyboard */,
+				D267550024CA58D000B71763 /* R.generated.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		D2727F3D24C90A8E00503D88 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D2F3031A24C8D5FC002930AF /* Main.storyboard */,
-				D2727F3924C90A7A00503D88 /* CritterListCell.swift */,
-				D2727F3A24C90A7A00503D88 /* CritterListCell.xib */,
 				D2C45DB724D0D3C80099B9F5 /* CritterDetailCell.swift */,
 				D2C45DB824D0D3C80099B9F5 /* CritterDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
+		D2929FAB24D1E8550012C2C0 /* CritterListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D22C1F0B24D1EB49001AA655 /* Controllers */,
+				D22C1F0C24D1EB5B001AA655 /* Views */,
+				D22C1F1224D1F148001AA655 /* CritterListModel.swift */,
+				D22C1F1424D1FE79001AA655 /* CritterListPresenter.swift */,
+			);
+			path = CritterListViewController;
+			sourceTree = "<group>";
+		};
 		D2E7EB0F24CA49C400EDD734 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D2F3031824C8D5FB002930AF /* ViewController.swift */,
 				D226EF5824CBB2040020A644 /* CritterDetailViewController.swift */,
 				D226EF5924CBB2040020A644 /* CritterDetailViewController.xib */,
 			);
@@ -139,14 +197,13 @@
 			children = (
 				D2F3031424C8D5FB002930AF /* AppDelegate.swift */,
 				D2F3031624C8D5FB002930AF /* SceneDelegate.swift */,
-				D267550024CA58D000B71763 /* R.generated.swift */,
 				D2E7EB1024CA49C800EDD734 /* Model */,
-				D2E7EB0F24CA49C400EDD734 /* Controller */,
-				D2727F3D24C90A8E00503D88 /* View */,
-				D2F3031D24C8D600002930AF /* Assets.xcassets */,
-				D2C45DBB24D0D5880099B9F5 /* Colors.xcassets */,
-				D2F3031F24C8D600002930AF /* LaunchScreen.storyboard */,
+				D2929FAB24D1E8550012C2C0 /* CritterListViewController */,
+				D22C1F0F24D1F087001AA655 /* CritterDetailViewController */,
+				D22C1F1024D1F0EB001AA655 /* Resources */,
+				D22C1F1124D1F105001AA655 /* SupportingFiles */,
 				D2F3032224C8D600002930AF /* Info.plist */,
+				D22C1F1624D206FA001AA655 /* CritterInteractor.swift */,
 			);
 			path = ACNH;
 			sourceTree = "<group>";
@@ -217,7 +274,7 @@
 				D2727F3C24C90A7A00503D88 /* CritterListCell.xib in Resources */,
 				D226EF5B24CBB2040020A644 /* CritterDetailViewController.xib in Resources */,
 				D2C45DBA24D0D3C90099B9F5 /* CritterDetailCell.xib in Resources */,
-				D2F3031C24C8D5FC002930AF /* Main.storyboard in Resources */,
+				D22C1F0E24D1EBF3001AA655 /* CritterListViewController.xib in Resources */,
 				D2C45DBC24D0D5880099B9F5 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F3031924C8D5FB002930AF /* ViewController.swift in Sources */,
+				D22C1F1724D206FA001AA655 /* CritterInteractor.swift in Sources */,
+				D2F3031924C8D5FB002930AF /* CritterListViewController.swift in Sources */,
 				D2FCBB1524CFD9CB00BD6992 /* Critter.swift in Sources */,
 				D2F3031524C8D5FB002930AF /* AppDelegate.swift in Sources */,
 				D2727F3B24C90A7A00503D88 /* CritterListCell.swift in Sources */,
@@ -300,21 +358,15 @@
 				D267550124CA58D000B71763 /* R.generated.swift in Sources */,
 				D267550724CA61CC00B71763 /* Fish.swift in Sources */,
 				D226EF5A24CBB2040020A644 /* CritterDetailViewController.swift in Sources */,
+				D22C1F1524D1FE79001AA655 /* CritterListPresenter.swift in Sources */,
 				D267550924CA61D500B71763 /* Sea.swift in Sources */,
+				D22C1F1324D1F148001AA655 /* CritterListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2F3031A24C8D5FC002930AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2F3031B24C8D5FC002930AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2F3031F24C8D600002930AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
