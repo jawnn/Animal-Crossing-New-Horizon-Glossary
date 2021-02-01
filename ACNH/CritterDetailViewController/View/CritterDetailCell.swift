@@ -10,9 +10,10 @@ class CritterDetailCell: UITableViewCell {
         super.awakeFromNib()
 
         selectionStyle = .none
-        cellBackgroundView.layer.cornerRadius = 10
         contentView.layer.cornerRadius = 10
-        titleLabel.layer.cornerRadius = 8
+        cellBackgroundView.layer.cornerRadius = 10
+        cellBackgroundView.clipsToBounds = true
+        titleLabel.layer.cornerRadius = 10
         titleLabel.layer.masksToBounds = true
         descriptionLabel.layer.cornerRadius = 10
         descriptionLabel.layer.masksToBounds = true

@@ -11,6 +11,8 @@ class CritterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+
         if let url = URL(string: presenter.imageURLString) {
             critterImage.kf.setImage(with: url)
         }
@@ -20,7 +22,10 @@ class CritterDetailViewController: UIViewController {
         tableView.dataSource = presenter
         tableView.delegate = self
         tableView.register(UINib(nibName: String(describing: CritterDetailCell.self), bundle: nil), forCellReuseIdentifier: "detailCellID")
+        tableView.register(TextDescriptionCell.self, forCellReuseIdentifier: String(describing: TextDescriptionCell.self))
 
+        let footerView = UIView()
+        tableView.tableFooterView = footerView
     }
 
 }
@@ -30,5 +35,5 @@ extension CritterDetailViewController: CritterDetailType {
 }
 
 extension CritterDetailViewController: UITableViewDelegate {
-
+    
 }

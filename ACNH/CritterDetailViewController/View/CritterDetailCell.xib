@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,26 +19,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sA4-wL-l6E" userLabel="backgroundView">
-                        <rect key="frame" x="8" y="4" width="485" height="60"/>
+                        <rect key="frame" x="8" y="4" width="485" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-AS-pKm" userLabel="titleLabel">
-                                <rect key="frame" x="16" y="10" width="100" height="40"/>
-                                <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="5" width="100" height="40"/>
+                                <color key="backgroundColor" name="Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8Wv-tl-JrC"/>
                                     <constraint firstAttribute="width" constant="100" id="CKN-l1-hrB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEd-VS-fYm" userLabel="descriptionLabel">
-                                <rect key="frame" x="140" y="10" width="329" height="40"/>
-                                <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="0.496788726993865" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEd-VS-fYm" userLabel="descriptionLabel">
+                                <rect key="frame" x="140" y="5" width="329" height="40"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0tr-pV-t8s"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,7 +49,7 @@
                             <constraint firstItem="Ifu-AS-pKm" firstAttribute="centerY" secondItem="sA4-wL-l6E" secondAttribute="centerY" id="joV-Vn-TsF"/>
                             <constraint firstItem="Ifu-AS-pKm" firstAttribute="leading" secondItem="sA4-wL-l6E" secondAttribute="leading" constant="16" id="oGm-PO-ldm"/>
                             <constraint firstItem="nEd-VS-fYm" firstAttribute="leading" secondItem="Ifu-AS-pKm" secondAttribute="trailing" constant="24" id="wOx-Bj-9NL"/>
-                            <constraint firstAttribute="height" constant="60" id="wpB-JJ-KjJ"/>
+                            <constraint firstAttribute="height" constant="50" id="wpB-JJ-KjJ"/>
                             <constraint firstAttribute="trailing" secondItem="nEd-VS-fYm" secondAttribute="trailing" constant="16" id="xkl-vM-rh1"/>
                         </constraints>
                     </view>
@@ -62,6 +63,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cellBackgroundView" destination="sA4-wL-l6E" id="rYI-M5-ylO"/>
                 <outlet property="descriptionLabel" destination="nEd-VS-fYm" id="zqG-cJ-H5E"/>
@@ -71,6 +73,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="Color">
+            <color red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background">
             <color red="0.80000000000000004" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

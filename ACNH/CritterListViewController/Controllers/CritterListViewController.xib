@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,14 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-zY-UKY">
-                    <rect key="frame" x="0.0" y="135" width="414" height="727"/>
+                    <rect key="frame" x="0.0" y="120" width="414" height="776"/>
                     <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hwd-tD-fnT">
-                    <rect key="frame" x="24" y="44" width="366" height="76"/>
+                    <rect key="frame" x="24" y="60" width="366" height="45"/>
                     <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="75" id="S5X-FW-vxS"/>
+                        <constraint firstAttribute="height" constant="44" id="S5X-FW-vxS"/>
                     </constraints>
                     <segments>
                         <segment title="Bugs"/>
@@ -37,17 +38,17 @@
                     <color key="selectedSegmentTintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </segmentedControl>
             </subviews>
-            <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="1Kq-yI-VX8"/>
+            <color key="backgroundColor" red="0.51192510130000002" green="0.69249129300000001" blue="0.50772821899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="1Kq-yI-VX8" firstAttribute="trailing" secondItem="Q82-zY-UKY" secondAttribute="trailing" id="1gU-5s-gLb"/>
-                <constraint firstItem="1Kq-yI-VX8" firstAttribute="top" secondItem="Hwd-tD-fnT" secondAttribute="top" id="Vll-BD-V7U"/>
-                <constraint firstItem="1Kq-yI-VX8" firstAttribute="bottom" secondItem="Q82-zY-UKY" secondAttribute="bottom" id="XqX-bX-8JK"/>
+                <constraint firstItem="Hwd-tD-fnT" firstAttribute="top" secondItem="1Kq-yI-VX8" secondAttribute="top" constant="16" id="6ZR-67-Jwo"/>
+                <constraint firstAttribute="bottom" secondItem="Q82-zY-UKY" secondAttribute="bottom" id="XqX-bX-8JK"/>
                 <constraint firstItem="Q82-zY-UKY" firstAttribute="top" secondItem="Hwd-tD-fnT" secondAttribute="bottom" constant="16" id="ZBl-fP-tBQ"/>
                 <constraint firstItem="Hwd-tD-fnT" firstAttribute="leading" secondItem="1Kq-yI-VX8" secondAttribute="leading" constant="24" id="ehd-pc-K71"/>
                 <constraint firstItem="Q82-zY-UKY" firstAttribute="leading" secondItem="1Kq-yI-VX8" secondAttribute="leading" id="gNm-AK-nUf"/>
                 <constraint firstItem="1Kq-yI-VX8" firstAttribute="trailing" secondItem="Hwd-tD-fnT" secondAttribute="trailing" constant="24" id="n6v-bT-NI8"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="1Kq-yI-VX8"/>
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>

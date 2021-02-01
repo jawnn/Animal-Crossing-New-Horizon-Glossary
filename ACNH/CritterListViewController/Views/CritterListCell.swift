@@ -13,10 +13,9 @@ class CritterListCell: UITableViewCell {
         super.awakeFromNib()
 
         selectionStyle = .none
-        cellColorBackground.layer.cornerRadius = 10
         contentView.layer.cornerRadius = 10
-        critterID.layer.cornerRadius = 8
-        critterID.layer.masksToBounds = true
+        cellColorBackground.layer.cornerRadius = 10
+        cellColorBackground.clipsToBounds = true
         critterName.layer.cornerRadius = 10
         critterName.layer.masksToBounds = true
     }

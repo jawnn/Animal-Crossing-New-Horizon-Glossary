@@ -19,7 +19,7 @@ class CritterListViewController: UIViewController {
 
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE, MMM d, yyyy"
+        formatter.dateFormat = "EEEE MMM d, yyyy"
 
         title = formatter.string(from: date)
 

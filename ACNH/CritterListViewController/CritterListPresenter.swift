@@ -13,18 +13,6 @@ class CritterListPresenter: NSObject, CritterListPresenterType {
     var model: CritterListModelType
     var view: CritterListType
 
-//    var bugs: [Bug] {
-//        return model.bugs
-//    }
-//
-//    var fish: [Fish] {
-//        return model.fish
-//    }
-//
-//    var sea: [Sea] {
-//        return model.sea
-//    }
-
     init(model: CritterListModelType, view: CritterListType) {
         self.model = model
         self.view = view
